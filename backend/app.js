@@ -99,7 +99,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb+srv://user1:AVcUEE72gSZJ3jNI@cluster1-blvog.mongodb.net/messages?retryWrites=true"
+    "mongodb+srv://user1:<password>@cluster1-blvog.mongodb.net/messages?retryWrites=true"
   )
   .then(result => {
     app.listen(8080);
